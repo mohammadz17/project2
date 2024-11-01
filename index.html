@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft-Cloud, Computers, Apps&Gaming</title>
+    <link rel="stylesheet" href="grid12columns/grid12.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <script src="jquery/jquery.js"></script>
+    <script> 
+        $(function () {
+            $('#menuspan').click(function () {
+                $('#container').slideToggle();
+            });
+        });
+        $(function () {
+            $('#menuspan').click(function () {
+                $('#slider').delay();
+            });
+        });
+        $(function ()  {
+             $('#arrow1').click(function () {
+                $('#sub1').slideToggle();
+            });
+        });
+        $(function ()  {
+             $('#arrow2').click(function () {
+                $('#sub2').slideToggle();
+            });
+        });
+        $(function () {
+            $('#gotop').hide();
+            $(window).on('scroll' , function(){
+                if($(this).scrollTop() > 150){
+                    $('#gotop').fadeIn();
+                }else{
+                    $('#gotop').fadeOut();
+                }
+            });
+            $('#gotop').on('click' , function(){
+                $('body , html').animate({scrollTop:0} , 500);
+            });
+        });
+        
+    </script>
+</head>
+<body>
+<main>
+    <div class="row">
+        <nav id="nav">
+        <div class="wrapper">
+            <figure id="img1">
+                <img src="logos/Microsoft-Logo1.png" alt="Microsoft-Logo1" id="logoimg">
+            </figure>
+            <span id="menuspan">
+                <img src="icons/icons8-menu-50.png" alt="icons8-menu-50" class="navimg">
+            </span>
+            <ul id="container">
+                <li class="item"><a href="#">مایکروسافت۳۶۵</a></li>
+                <li class="item"><a href="#">نرم افزار</a>
+                    <img src="icons/arrowicon.png" alt="arrow" id="arrow1">
+                    <ul class="submenu" id="sub1">
+                        <li class="subitem"><a href="#">اپلیکیشن های ویندوز</a></li>
+                        <li class="subitem"><a href="#">هوش مصنوعی</a></li>
+                        <li class="subitem"><a href="#">چشم انداز</a></li>
+                        <li class="subitem"><a href="#">یک درایو</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">کامپیوتر ها و دستگاه ها</a>
+                    <img src="icons/arrowicon.png" alt="arrow" id="arrow2">
+                    <ul class="submenu" id="sub2">
+                        <li class="subitem"><a href="#">کامپیوتر ها</a></li>
+                        <li class="subitem"><a href="#">خرید ایکس باکس</a></li>
+                        <li class="subitem"><a href="#">دسترسی ها</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">سرگرمی</a></li>
+                <li class="item"><a href="#">نقشه سایت</a></li>
+            </ul>
+            <ul id="container2">
+                <li class="item2"><a href="#">مایکروسافت۳۶۵</a></li>
+                <li class="item2"><a href="#">تیم ها</a></li>
+                <li class="item2"><a href="#">خلبان</a></li>
+                <li class="item2"><a href="#">ویندوز</a></li>
+                <li class="item2 ll"><a href="#">بیشتر</a>
+                    <ul id="hoverul">
+                        <li><a href="#footer">نقشه سایت</a></li>
+                        <li><a href="#">پشتیبانی</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="wrapper" id="saveproject">
+                <a href="#"><span id="searchspan">
+                    <img src="icons/searchicon.png" alt="searchicon" class="navimg">
+                </span></a>
+                <a href=""><span id="signinspan">
+                    <img src="icons/signinicon.png" alt="signin" class="navimg">
+                </span></a>
+                <a href="#"><span id="shopingspan">
+                    <img src="icons/shoppingicon.png" alt="shopping" class="navimg">
+                </span></a>
+            </div>
+        </div>
+        </nav>
+    </div>
+    <section>
+    <div class="row">
+        <header id="header">
+            <div class="wrapper">
+                <h1>معاملات جمعه سیاه فعال است</h1>
+            </div>
+        </header>
+    </div>
+    </section>
+    <section class="row wrapper">
+        <ul id="slider">
+            <li><img src="slider/slide1.jpg" alt="xbox"></li>
+            <li><img src="slider/slide_2.jpeg" alt="laptop1"></li>
+            <li><img src="slider/slide3.jpeg" alt="laptop2"></li>
+            <li><img src="slider/slide_4.jpg" alt="cntroller"></li>
+        </ul>
+    </section>
+    <section class="row wrapper">
+            <ul id="iconsul">
+                <li><img src="icons/xboxicon.png" alt="xbox"><br><a href="#">جمعه سیاه در: خرید دستگاه ها</a></li>
+                <li><img src="icons/microsofticon.png" alt="microsoft"><br><a href="#">جمعه سیاه در: خرید لپتاپ</a></li>
+                <li><img src="icons/icons8-laptop-64.png" alt="laptop"><br><a href="#">جمعه سیاه در: خرید مایکروسافت آفیس</a></li>
+                <li><img src="icons/icons8-keyboard-50.png" alt="keyboard"><br><a href="#">جمعه سیاه در: خرید ایکس باکس</a></li>
+    </section>
+    <section class="row wrapper">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                <img src="posts/post1.png" alt="post1">
+                <section class="textstyle">
+                    <h2>تا سیسصد دلار تخفیف</h2>
+                    <p> در مورد تعادل عالی سبک، سرعت و قدرت پردازش جدی صرفه جویی کنید.</p>
+                    <a href="#">خرید محصولات</a>
+                </section>
+            </article>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                <img src="posts/post2.png" alt="post2">
+                <section class="textstyle">
+                    <h2>تا دویست دلار تخفیف</h2>
+                    <p> دستگاه های منتخبی که برای ارائه قدرت و انعطاف پذیری ساخته شده اند</p>
+                    <a href="#">خرید محصولات</a>
+                </section>
+            </article> 
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                <img src="posts/post1.png" alt="post3">
+                <section class="textstyle">
+                    <h2>تخفیف پنجاه درصدی</h2>
+                    <p>به طور ایمن تجربه ویندوز خود را از ابر مایکروسافت پخش کنید.</p>
+                    <a href="#">خرید محصولات</a>
+                </section>
+            </article>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                <img src="posts/post2.png" alt="post4">
+                <section class="textstyle">
+                    <h2>یک لپتاپ خوب</h2>
+                    <p>اکنون لپتاپ های در حال فروش را انتخاب کنید. پیشنهاد به پایان می رسد</p>
+                    <a href="#">خرید محصولات</a>
+                </section>
+            </article>
+        </div>
+    </section>
+    <!--*************************************************************************************************************-->
+    <section class="wrapper row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <article class="panel">
+                <h3>تا 50 درصد در لوازم جانبی انتخابی صرفه جویی کنید</h3>
+                <p>زمان آن فرا رسیده است - لیست خود را تهیه کنید و برای لوازم جانبی طراحی شده برای کار یکپارچه با دستگاه سرفیس خود، تخفیف های داغ بخرید.</p>
+                <img src="icons/heart.png" alt="heart"><br><br>
+                <button type="button">حمایت از ما</button>
+            </article>
+        </div>
+    </section>
+    <!--*************************************************************************************************************-->
+    <section class="wrapper row"><h2 id="forbusiness">برای تجارت</h2></section>
+    <section class="row wrapper">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                    <img src="posts/business2.webp" alt="">
+                    <h2>کدنویسی کنید، آزمایش کنید</h2>
+                    <p>ایده های خود را زنده کنید. از امروز شروع به ساخت اپلیکیشن کنید</p>
+                    <a href="#">خرید محصولات</a>
+            </article>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                    <img src="posts/business2.webp" alt="">
+                    <h2>مایکروسافت تیم</h2>
+                    <p>جلسات آنلاین، گپ و فضای ذخیره سازی ابری مشترک - همه در یک مکان.</p>
+                    <a href="#">خرید محصولات</a>
+            </article>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                    <img src="posts/business3.jpeg" alt="">
+                    <h2>ویندوز یازده برای تجارت</h2>
+                    <p>برای کارهای هیبریدی طراحی شده است. قدرتمند برای کارمندان سازگار برای IT.</p>
+                    <a href="#">خرید محصولات</a>
+            </article>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <article class="post">
+                    <img src="posts/business3.jpeg"  alt="">
+                    <h2>تجارت های کوچک</h2>
+                    <p>با این دستگاه ها  تیم خود را قادر به کار کردن به روش خود کنید</p>
+                    <a href="#">خرید محصولات</a>
+            </article>
+        </div>
+    </section>
+    <footer id="footer">
+        <section class="wrapper row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <ul class="footerlist">
+                    <li class="flistitem">تازه ها</li>
+                    <li class="flistitem"><a href="#">surface studio 2 لپ تاپ </a></li>
+                    <li class="flistitem"><a href="#">surface Go 3 لپ تاپ</a></li>
+                    <li class="flistitem"><a href="#">surface pro 9</a></li>
+                    <li class="flistitem"><a href="#">Surface Laptop 5</a></li>
+                    <li class="flistitem"><a href="#">Surface Studio 2+</a></li>
+                    <li class="flistitem"><a href="#">کمک خلبان در ویندوز</a></li>
+                    <li class="flistitem"><a href="#">اپلیکیشن های ویندوز 11</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">    
+                <ul class="footerlist">
+                    <li class="flistitem">فروشگاه مایکروسافت</li>
+                    <li class="flistitem"><a href="#">نمایه حساب</a></li>
+                    <li class="flistitem"><a href="#">مرکز دانلود</a></li>
+                    <li class="flistitem"><a href="#">پشتیبانی فروشگاه مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">برگشت</a></li>
+                    <li class="flistitem"><a href="#">رهگیری سفارش</a></li>
+                    <li class="flistitem"><a href="#">تایید شده و بازسازی شده</a></li>
+                    <li class="flistitem"><a href="#">وعده فروشگاه مایکروسافت</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <ul class="footerlist">
+                    <li class="flistitem">تحصیلات</li>
+                    <li class="flistitem"><a href="#">مایکروسافت در آموزش</a></li>
+                    <li class="flistitem"><a href="#">دستگاه هایی برای آموزش</a></li>
+                    <li class="flistitem"><a href="#">تیم های مایکروسافت برای آموزش</a></li>
+                    <li class="flistitem"><a href="#">آموزش مایکروسافت۳۶۵</a></li>
+                    <li class="flistitem"><a href="#">چگونه برای مدرسه خود خرید کنیم</a></li>
+                    <li class="flistitem"><a href="#">تربیت و توسعه مربی</a></li>
+                    <li class="flistitem"><a href="#">Azure برای دانش آموزان</a></li>
+                </ul>
+            </div>  
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">    
+                <ul class="footerlist">
+                    <li class="flistitem">تجارت</li>
+                    <li class="flistitem"><a href="#">مایکروسافت کلود</a></li>
+                    <li class="flistitem"><a href="#">امنیت مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">مایکروسافت۳۶۵</a></li>
+                    <li class="flistitem"><a href="#">پلتفرم پاور مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">تیم های مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">صنعت مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">کسب و کار کوچک</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <ul class="footerlist">
+                    <li class="flistitem">توسعه دهنده ها و آی تی</li>
+                    <li class="flistitem"><a href="#">Azure</a></li>
+                    <li class="flistitem"><a href="#">مرکز توسعه دهندگان</a></li>
+                    <li class="flistitem"><a href="#">فراگرفتن مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">انجمن فناوری مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">بازار لاجورد</a></li>
+                    <li class="flistitem"><a href="#">برنامه منبع</a></li>
+                    <li class="flistitem"><a href="#">ویژوال استودیو</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <ul class="footerlist">
+                    <li class="flistitem">کمپانی</li>
+                    <li class="flistitem"><a href="#">مشاغل</a></li>
+                    <li class="flistitem"><a href="#">درباره مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">اخبار شرکت</a></li>
+                    <li class="flistitem"><a href="#">حریم خصوصی در مایکروسافت</a></li>
+                    <li class="flistitem"><a href="#">سرمایه گذاران</a></li>
+                    <li class="flistitem"><a href="#">تنوع و شمول</a></li>
+                    <li class="flistitem"><a href="#">پایداری</a></li>
+                </ul>
+            </div>
+        </section> 
+    </footer>
+    <span id="gotop">رفتن به بالای صفحه</span>
+</main>
+<script src="script.js"></script>
+</body>
+</html> 
